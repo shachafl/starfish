@@ -12,7 +12,7 @@ anyio==4.3.0
     # via
     #   httpx
     #   jupyter-server
-app-model==0.2.4
+app-model==0.2.7
     # via napari
 appdirs==1.4.4
     # via
@@ -29,10 +29,8 @@ asttokens==2.4.1
 async-lru==2.0.4
     # via jupyterlab
 attrs==23.2.0
-    # via
-    #   jsonschema
-    #   referencing
-babel==2.14.0
+    # via jsonschema
+babel==2.15.0
     # via
     #   jupyterlab-server
     #   sphinx
@@ -42,13 +40,13 @@ beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.1.0
     # via nbconvert
-boto3==1.34.53
+boto3==1.34.105
     # via slicedimage
-botocore==1.34.53
+botocore==1.34.105
     # via
     #   boto3
     #   s3transfer
-build==1.1.1
+build==1.2.1
     # via npe2
 cachey==0.2.1
     # via napari
@@ -68,7 +66,7 @@ click==8.1.7
     #   typer
 cloudpickle==3.0.0
     # via dask
-comm==0.2.1
+comm==0.2.2
     # via
     #   ipykernel
     #   ipywidgets
@@ -86,43 +84,43 @@ defusedxml==0.7.1
     # via nbconvert
 diskcache==5.6.3
     # via slicedimage
-docstring-parser==0.15
+docstring-parser==0.16
     # via magicgui
 docutils==0.20.1
     # via sphinx
-exceptiongroup==1.2.0
+exceptiongroup==1.2.1
     # via anyio
 executing==2.0.1
     # via stack-data
 fastjsonschema==2.19.1
     # via nbformat
-fonttools==4.49.0
+fonttools==4.51.0
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
 freetype-py==2.4.0
     # via vispy
-fsspec==2024.2.0
+fsspec==2024.5.0
     # via dask
 h11==0.14.0
     # via httpcore
-h5py==3.10.0
+h5py==3.11.0
     # via -r requirements.in
 heapdict==1.0.1
     # via cachey
 hsluv==5.0.4
     # via vispy
-httpcore==1.0.4
+httpcore==1.0.5
     # via httpx
 httpx==0.27.0
     # via jupyterlab
-idna==3.6
+idna==3.7
     # via
     #   anyio
     #   httpx
     #   jsonschema
     #   requests
-imageio==2.34.0
+imageio==2.34.1
     # via
     #   napari
     #   napari-svg
@@ -130,7 +128,7 @@ imageio==2.34.0
     #   slicedimage
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==7.0.1
+importlib-metadata==7.1.0
     # via
     #   build
     #   dask
@@ -141,15 +139,15 @@ importlib-metadata==7.0.1
     #   nbconvert
     #   numba
     #   sphinx
-importlib-resources==6.1.2
+importlib-resources==6.4.0
     # via
     #   jsonschema
-    #   jsonschema-specifications
     #   jupyterlab
     #   matplotlib
-in-n-out==0.1.9
+    #   vispy
+in-n-out==0.2.1
     # via app-model
-ipykernel==6.29.3
+ipykernel==6.29.4
     # via
     #   jupyter
     #   jupyter-console
@@ -168,35 +166,33 @@ isoduration==20.11.0
     # via jsonschema
 jedi==0.19.1
     # via ipython
-jinja2==3.1.3
+jinja2==3.1.4
     # via
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
-    #   numpydoc
     #   sphinx
 jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-joblib==1.3.2
+joblib==1.4.2
     # via scikit-learn
-json5==0.9.17
+json5==0.9.25
     # via jupyterlab-server
 jsonpointer==2.4
     # via jsonschema
-jsonschema[format-nongpl]==4.21.1
+jsonschema[format-nongpl]==4.17.3
     # via
+    #   -r requirements.in
     #   jupyter-events
     #   jupyterlab-server
     #   napari
     #   nbformat
-jsonschema-specifications==2023.12.1
-    # via jsonschema
 jupyter==1.0.0
     # via -r requirements.in
-jupyter-client==8.6.0
+jupyter-client==8.6.1
     # via
     #   ipykernel
     #   jupyter-console
@@ -205,7 +201,7 @@ jupyter-client==8.6.0
     #   qtconsole
 jupyter-console==6.6.3
     # via jupyter
-jupyter-core==5.7.1
+jupyter-core==5.7.2
     # via
     #   ipykernel
     #   jupyter-client
@@ -216,24 +212,24 @@ jupyter-core==5.7.1
     #   nbconvert
     #   nbformat
     #   qtconsole
-jupyter-events==0.9.0
+jupyter-events==0.6.3
     # via jupyter-server
-jupyter-lsp==2.2.3
+jupyter-lsp==2.2.5
     # via jupyterlab
-jupyter-server==2.12.5
+jupyter-server==2.10.0
     # via
     #   jupyter-lsp
     #   jupyterlab
     #   jupyterlab-server
     #   notebook
     #   notebook-shim
-jupyter-server-terminals==0.5.2
+jupyter-server-terminals==0.5.3
     # via jupyter-server
-jupyterlab==4.1.2
+jupyterlab==4.1.6
     # via notebook
 jupyterlab-pygments==0.3.0
     # via nbconvert
-jupyterlab-server==2.25.3
+jupyterlab-server==2.24.0
     # via
     #   jupyterlab
     #   notebook
@@ -243,7 +239,7 @@ kiwisolver==1.4.5
     # via
     #   matplotlib
     #   vispy
-lazy-loader==0.3
+lazy-loader==0.4
     # via
     #   napari
     #   scikit-image
@@ -253,7 +249,7 @@ locket==1.0.0
     # via partd
 looseversion==1.3.0
     # via trackpy
-magicgui==0.8.1
+magicgui==0.8.2
     # via napari
 markdown-it-py==3.0.0
     # via rich
@@ -267,7 +263,7 @@ matplotlib==3.7.5
     #   seaborn
     #   showit
     #   trackpy
-matplotlib-inline==0.1.6
+matplotlib-inline==0.1.7
     # via
     #   ipykernel
     #   ipython
@@ -277,8 +273,6 @@ mistune==3.0.2
     # via nbconvert
 mpmath==1.3.0
     # via sympy
-mypy-extensions==1.0.0
-    # via psygnal
 napari[all]==0.4.19.post1
     # via -r requirements.in
 napari-console==0.0.9
@@ -291,13 +285,13 @@ napari-plugin-manager==0.1.0a2
     # via napari
 napari-svg==0.1.10
     # via napari
-nbclient==0.9.0
+nbclient==0.10.0
     # via nbconvert
-nbconvert==7.16.1
+nbconvert==7.16.4
     # via
     #   jupyter
     #   jupyter-server
-nbformat==5.9.2
+nbformat==5.10.4
     # via
     #   jupyter-server
     #   nbclient
@@ -306,13 +300,13 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.1
     # via scikit-image
-notebook==7.1.1
+notebook==7.1.2
     # via jupyter
 notebook-shim==0.2.4
     # via
     #   jupyterlab
     #   notebook
-npe2==0.7.4
+npe2==0.7.5
     # via
     #   napari
     #   napari-plugin-manager
@@ -342,11 +336,11 @@ numpy==1.24.4
     #   triangle
     #   vispy
     #   xarray
-numpydoc==1.6.0
+numpydoc==1.7.0
     # via napari
 overrides==7.7.0
     # via jupyter-server
-packaging==23.2
+packaging==24.0
     # via
     #   build
     #   dask
@@ -354,6 +348,7 @@ packaging==23.2
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
+    #   lazy-loader
     #   matplotlib
     #   nbconvert
     #   pooch
@@ -362,7 +357,6 @@ packaging==23.2
     #   scikit-image
     #   slicedimage
     #   sphinx
-    #   superqt
     #   vispy
     #   xarray
 pandas==2.0.3
@@ -373,7 +367,7 @@ pandas==2.0.3
     #   xarray
 pandocfilters==1.5.1
     # via nbconvert
-parso==0.8.3
+parso==0.8.4
     # via jedi
 partd==1.4.1
     # via dask
@@ -381,7 +375,7 @@ pexpect==4.9.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-pillow==10.2.0
+pillow==10.3.0
     # via
     #   imageio
     #   matplotlib
@@ -391,7 +385,7 @@ pint==0.21.1
     # via napari
 pkgutil-resolve-name==1.3.10
     # via jsonschema
-platformdirs==4.2.0
+platformdirs==4.2.2
     # via
     #   jupyter-core
     #   pooch
@@ -407,7 +401,7 @@ psutil==5.9.8
     # via
     #   ipykernel
     #   napari
-psygnal==0.9.5
+psygnal==0.11.1
     # via
     #   app-model
     #   magicgui
@@ -421,9 +415,9 @@ pure-eval==0.2.2
     # via stack-data
 pyconify==0.1.6
     # via superqt
-pycparser==2.21
+pycparser==2.22
     # via cffi
-pydantic==2.6.3
+pydantic==2.7.1
     # via
     #   app-model
     #   napari
@@ -431,9 +425,9 @@ pydantic==2.6.3
     #   pydantic-compat
 pydantic-compat==0.1.2
     # via app-model
-pydantic-core==2.16.3
+pydantic-core==2.18.2
     # via pydantic
-pygments==2.17.2
+pygments==2.18.0
     # via
     #   ipython
     #   jupyter-console
@@ -445,9 +439,9 @@ pygments==2.17.2
     #   superqt
 pyopengl==3.1.7
     # via napari
-pyparsing==3.1.1
+pyparsing==3.1.2
     # via matplotlib
-pyproject-hooks==1.0.0
+pyproject-hooks==1.1.0
     # via build
 pyqt5==5.15.10
     # via napari
@@ -455,7 +449,9 @@ pyqt5-qt5==5.15.2
     # via pyqt5
 pyqt5-sip==12.13.0
     # via pyqt5
-python-dateutil==2.9.0
+pyrsistent==0.20.0
+    # via jsonschema
+python-dateutil==2.9.0.post0
     # via
     #   arrow
     #   botocore
@@ -477,14 +473,14 @@ pyyaml==6.0.1
     #   napari
     #   npe2
     #   trackpy
-pyzmq==25.1.2
+pyzmq==26.0.3
     # via
     #   ipykernel
     #   jupyter-client
     #   jupyter-console
     #   jupyter-server
     #   qtconsole
-qtconsole==5.5.1
+qtconsole==5.5.2
     # via
     #   jupyter
     #   napari-console
@@ -498,11 +494,6 @@ qtpy==2.4.1
     #   superqt
 read-roi==1.6.0
     # via -r requirements.in
-referencing==0.33.0
-    # via
-    #   jsonschema
-    #   jsonschema-specifications
-    #   jupyter-events
 regional==1.1.2
     # via -r requirements.in
 requests==2.31.0
@@ -521,12 +512,10 @@ rfc3986-validator==0.1.1
     #   jsonschema
     #   jupyter-events
 rich==13.7.1
-    # via npe2
-rpds-py==0.18.0
     # via
-    #   jsonschema
-    #   referencing
-s3transfer==0.10.0
+    #   npe2
+    #   typer
+s3transfer==0.10.1
     # via boto3
 scikit-image[data]==0.21.0
     # via
@@ -545,8 +534,10 @@ seaborn==0.13.2
     # via -r requirements.in
 semantic-version==2.10.0
     # via -r requirements.in
-send2trash==1.8.2
+send2trash==1.8.3
     # via jupyter-server
+shellingham==1.5.4
+    # via typer
 showit==1.1.4
     # via -r requirements.in
 six==1.16.0
@@ -581,7 +572,7 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 stack-data==0.6.3
     # via ipython
-superqt[iconify]==0.6.1
+superqt[iconify]==0.6.6
     # via
     #   magicgui
     #   napari
@@ -590,17 +581,17 @@ sympy==1.12
     # via -r requirements.in
 tabulate==0.9.0
     # via numpydoc
-terminado==0.18.0
+terminado==0.18.1
     # via
     #   jupyter-server
     #   jupyter-server-terminals
-threadpoolctl==3.3.0
+threadpoolctl==3.5.0
     # via scikit-learn
 tifffile==2023.7.10
     # via
     #   napari
     #   scikit-image
-tinycss2==1.2.1
+tinycss2==1.3.0
     # via nbconvert
 tomli==2.0.1
     # via
@@ -608,7 +599,6 @@ tomli==2.0.1
     #   jupyterlab
     #   npe2
     #   numpydoc
-    #   pyproject-hooks
 tomli-w==1.0.0
     # via npe2
 toolz==0.12.1
@@ -624,11 +614,11 @@ tornado==6.4
     #   jupyterlab
     #   notebook
     #   terminado
-tqdm==4.66.2
+tqdm==4.66.4
     # via napari
 trackpy==0.6.2
     # via -r requirements.in
-traitlets==5.14.1
+traitlets==5.14.3
     # via
     #   comm
     #   ipykernel
@@ -647,11 +637,11 @@ traitlets==5.14.1
     #   qtconsole
 triangle==20230923
     # via napari
-typer==0.9.0
+typer==0.12.3
     # via npe2
-types-python-dateutil==2.8.19.20240106
+types-python-dateutil==2.9.0.20240316
     # via arrow
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   annotated-types
     #   anyio
@@ -660,7 +650,6 @@ typing-extensions==4.10.0
     #   ipython
     #   magicgui
     #   napari
-    #   psygnal
     #   pydantic
     #   pydantic-core
     #   rich
@@ -674,9 +663,9 @@ urllib3==1.26.18
     # via
     #   botocore
     #   requests
-validators==0.22.0
+validators==0.28.1
     # via -r requirements.in
-vispy==0.14.1
+vispy==0.14.2
     # via
     #   napari
     #   napari-svg
@@ -688,7 +677,7 @@ webencodings==0.5.1
     # via
     #   bleach
     #   tinycss2
-websocket-client==1.7.0
+websocket-client==1.8.0
     # via jupyter-server
 widgetsnbextension==4.0.10
     # via ipywidgets
@@ -696,7 +685,7 @@ wrapt==1.16.0
     # via napari
 xarray==2023.1.0
     # via -r requirements.in
-zipp==3.17.0
+zipp==3.18.1
     # via
     #   importlib-metadata
     #   importlib-resources
