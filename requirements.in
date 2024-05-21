@@ -3,6 +3,8 @@ h5py
 # jsonschema 4.18.0 made RefResolver deprecated
 jsonschema<4.18
 jupyter
+# pinning mistune for m2r2 in CI requirements
+mistune==0.8.4
 # napari 0.4.18 made point sizes only isotropic: https://forum.image.sc/t/anisotropic-point-sizes/83388
 napari[all]>0.4.17
 read_roi
