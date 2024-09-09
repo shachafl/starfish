@@ -196,14 +196,14 @@ html_logo = '_static/design/logo-transparent.png'
 #
 # html_sidebars = {}
 html_sidebars = {
-    'installation/**': ['localtoc.html'],
-    'help_and_reference/**': ['localtoc.html'],
-    'getting_started/**': ['localtoc.html'],
-    'user_guide/**': ['localtoc.html'],
-    'gallery/**': ['localtoc.html'],
-    'api/**': ['localtoc.html'],
-    'developer_guide/**': ['localtoc.html'],
-    'about/**': ['localtoc.html'],
+    'installation/**': ['localtoc.html', 'relations.html'],
+    'help_and_reference/**': ['localtoc.html', 'relations.html'],
+    'getting_started/**': ['localtoc.html', 'relations.html'],
+    'user_guide/**': ['localtoc.html', 'relations.html'],
+    'gallery/**': ['localtoc.html', 'relations.html'],
+    'api/**': ['localtoc.html', 'relations.html'],
+    'developer_guide/**': ['localtoc.html', 'relations.html'],
+    'about/**': ['localtoc.html', 'relations.html'],
 }
 
 # -- Options for HTMLHelp output ---------------------------------------------
