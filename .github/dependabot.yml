@@ -8,3 +8,14 @@ updates:
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directories: 
+      - "/starfish/REQUIREMENTS-STRICT.txt"
+      - "/requirements/REQUIREMENTS-CI.txt"
+      - "/requirements/REQUIREMENTS-NAPARI-CI.txt"
+      - "/requirements/REQUIREMENTS-JUPYTER.txt"
+    schedule:
+      interval: "weekly"
+    # Disable version updates (allows only security updates)
+    open-pull-requests-limit: 0
