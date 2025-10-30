@@ -31,7 +31,7 @@ flexcache==0.3
 flexparser==0.4
 fonttools==4.60.1
 freetype-py==2.5.1
-fsspec==2025.9.0
+fsspec==2025.10.0
 h5py==3.14.0
 HeapDict==1.0.1
 hsluv==5.0.4
