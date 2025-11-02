@@ -16,13 +16,21 @@ updates:
       # Check for updates to pip dependencies once a month
       interval: "monthly"
     # Allow up to 10 open pull requests for pip dependencies
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
 
-  # Monitor CI requirements
-  - package-ecosystem: "pip"
-    directory: "/requirements"
-    schedule:
-      # Check for updates to CI dependencies once a month
-      interval: "monthly"
-    # Allow up to 10 open pull requests for CI dependencies
-    open-pull-requests-limit: 10
+    # Grouping: combine pip dependency updates into fewer PRs.
+    # - "minor-patch" groups only minor and patch updates together.
+    # - "major" keeps major updates in separate PRs.
+    # Dependabot will still create one grouped PR per update window for each group.
+    groups:
+      minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+        patterns:
+          - "*"
+      major:
+        update-types:
+          - "major"
+        patterns:
+          - "*"
