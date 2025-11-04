@@ -459,9 +459,9 @@ jobs:
         run: |
           make TESTING=1 iss_pipeline.py
 
-dartfish-pipeline-data-processing-example:
+  dartfish-pipeline-data-processing-example:
     name: dartfish_pipeline.py Data Processing Example
-    needs: starfish-slow
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -479,6 +479,7 @@ dartfish-pipeline-data-processing-example:
       - name: Install Dependencies
         run: |
           make install-dev
+          pip install -r requirements/REQUIREMENTS-NAPARI-CI.txt
 
       - name: Run Data Processing Example Test
         run: |

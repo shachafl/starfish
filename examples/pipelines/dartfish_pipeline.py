@@ -16,11 +16,15 @@ from raw images into spatially resolved gene expression profiles
 from IPython import get_ipython
 import matplotlib
 import matplotlib.pyplot as plt
+import sys
 
-# equivalent to %gui qt and %matplotlib inline
+# equivalent to using in a notebook cell: %matplotlib inline
 ipython = get_ipython()
-ipython.run_line_magic("gui", "qt5")
-ipython.run_line_magic("matplotlib", "inline")
+if ipython is not None:
+    if 'ipykernel' in sys.modules: # running in Jupyter
+        ipython.run_line_magic('matplotlib', 'inline')
+    else: # terminal IPython
+        ipython.run_line_magic('matplotlib', 'qt5')
 
 matplotlib.rcParams["figure.dpi"] = 150
 
