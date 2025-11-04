@@ -459,7 +459,7 @@ jobs:
         run: |
           make TESTING=1 iss_pipeline.py
 
-dartfish-pipeline-data-processing-example:
+  dartfish-pipeline-data-processing-example:
     name: dartfish_pipeline.py Data Processing Example
     needs: starfish-slow
     runs-on: ubuntu-latest
