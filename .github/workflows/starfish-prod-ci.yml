@@ -458,3 +458,28 @@ jobs:
       - name: Run Data Processing Example Test
         run: |
           make TESTING=1 iss_pipeline.py
+
+dartfish-pipeline-data-processing-example:
+    name: dartfish_pipeline.py Data Processing Example
+    needs: starfish-slow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.9'
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ runner.OS }}-${{ env.pythonLocation }}-${{ hashFiles('requirements/REQUIREMENTS-CI.txt') }}
+
+      - name: Install Dependencies
+        run: |
+          make install-dev
+
+      - name: Run Data Processing Example Test
+        run: |
+          make dartfish_pipeline.py
